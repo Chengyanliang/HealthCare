@@ -11,7 +11,13 @@ import subprocess
 vars = Variables('custom.py')
 vars.Add(PathVariable('OCI_HOME',
                        'Oracle Instant Client root',
-                       os.environ.get('OCI_HOME', '/opt/oracle/instantclient'),
+                       os.environ.get('OCI_HOME',
+                                      '/Volumes/1T_ExFAT/HealthAnalyzer/oracle/instantclient'),
+                       PathVariable.PathAccept))
+vars.Add(PathVariable('OCILIB_HOME',
+                       'OCILIB install prefix',
+                       os.environ.get('OCILIB_HOME',
+                                      '/Volumes/1T_ExFAT/HealthAnalyzer/oracle/ocilib_install'),
                        PathVariable.PathAccept))
 vars.Add(PathVariable('ANTLR4_HOME',
                        'ANTLR4 C++ runtime root',
@@ -60,10 +66,12 @@ def lib_exists(name, search_paths):
         return False
 
 oci_home = env.subst('$OCI_HOME')
+ocilib_home = env.subst('$OCILIB_HOME')
 antlr4_home = env.subst('$ANTLR4_HOME')
 
 has_ocilib = lib_exists('ocilib',
-                        [oci_home, os.path.join(oci_home, 'lib'), '/usr/local/lib'])
+                        [os.path.join(ocilib_home, 'lib'),
+                         oci_home, os.path.join(oci_home, 'lib'), '/usr/local/lib'])
 has_antlr4 = lib_exists('antlr4-runtime',
                          [os.path.join(antlr4_home, 'lib'), '/usr/local/lib'])
 has_clntsh = lib_exists('clntsh',
@@ -92,6 +100,8 @@ if has_ocilib or has_clntsh:
     ])
     optional_libpath += [oci_home, os.path.join(oci_home, 'lib')]
     if has_ocilib:
+        env.Append(CPPPATH=['$OCILIB_HOME/include'])
+        optional_libpath.append(os.path.join(ocilib_home, 'lib'))
         optional_libs.append('ocilib')
         env.Append(CXXFLAGS=['-DHAS_OCILIB'])
     if has_clntsh:

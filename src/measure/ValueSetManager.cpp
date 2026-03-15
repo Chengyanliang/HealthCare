@@ -4,8 +4,9 @@
 #include <fstream>
 #include <sstream>
 
-// OCILIB header — available when Oracle client is installed
-// #include <ocilib.h>
+#ifdef HAS_OCILIB
+#include <ocilib.h>
+#endif
 
 namespace hedis {
 

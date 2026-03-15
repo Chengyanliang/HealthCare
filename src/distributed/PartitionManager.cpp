@@ -4,7 +4,9 @@
 #include <cstring>
 #include <unistd.h>
 
-// #include <ocilib.h>
+#ifdef HAS_OCILIB
+#include <ocilib.h>
+#endif
 
 namespace hedis {
 

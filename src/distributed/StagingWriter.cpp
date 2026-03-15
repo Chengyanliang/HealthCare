@@ -2,7 +2,9 @@
 
 #include "distributed/StagingWriter.h"
 
-// #include <ocilib.h>
+#ifdef HAS_OCILIB
+#include <ocilib.h>
+#endif
 
 namespace hedis {
 

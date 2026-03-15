@@ -5,7 +5,9 @@
 #include <fstream>
 #include <sstream>
 
-// #include <ocilib.h>
+#ifdef HAS_OCILIB
+#include <ocilib.h>
+#endif
 
 namespace hedis {
 
@@ -101,7 +103,8 @@ void MeasureStore::saveMeasure(const MeasureDefinition& measure) {
         "VALUES (s.MEASURE_ID, s.VERSION, :cql)",
         measure.measureId.c_str(), measure.version.c_str());
 
-    OCI_BindString(stmt, ":cql", measure.cqlText.c_str(), measure.cqlText.size());
+    std::string cqlBuf = measure.cqlText;
+    OCI_BindString(stmt, ":cql", &cqlBuf[0], cqlBuf.size());
     OCI_Execute(stmt);
     OCI_Commit(m_conn);
     OCI_StatementFree(stmt);

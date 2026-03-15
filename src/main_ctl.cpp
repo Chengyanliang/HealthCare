@@ -7,7 +7,9 @@
 #include <iostream>
 #include <string>
 
-// #include <ocilib.h>
+#ifdef HAS_OCILIB
+#include <ocilib.h>
+#endif
 
 namespace {
 
