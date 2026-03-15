@@ -119,5 +119,106 @@
     {"code": "14564-9", "system": "LOINC", "display": "Hemoglobin.gastrointestinal [Presence] in Stool --1st specimen"},
     {"code": "14565-6", "system": "LOINC", "display": "Hemoglobin.gastrointestinal [Presence] in Stool --2nd specimen"},
     {"code": "29771-3", "system": "LOINC", "display": "Hemoglobin.gastrointestinal [Presence] in Stool by Immunoassay"}
+  ],
+  "Cervical Cancer": [
+    {"code": "C53.0", "system": "ICD10", "display": "Malignant neoplasm of endocervix"},
+    {"code": "C53.1", "system": "ICD10", "display": "Malignant neoplasm of exocervix"},
+    {"code": "C53.8", "system": "ICD10", "display": "Malignant neoplasm of overlapping sites of cervix uteri"},
+    {"code": "C53.9", "system": "ICD10", "display": "Malignant neoplasm of cervix uteri, unspecified"}
+  ],
+  "Colorectal Cancer": [
+    {"code": "C18.0", "system": "ICD10", "display": "Malignant neoplasm of cecum"},
+    {"code": "C18.2", "system": "ICD10", "display": "Malignant neoplasm of ascending colon"},
+    {"code": "C18.4", "system": "ICD10", "display": "Malignant neoplasm of transverse colon"},
+    {"code": "C18.6", "system": "ICD10", "display": "Malignant neoplasm of descending colon"},
+    {"code": "C18.7", "system": "ICD10", "display": "Malignant neoplasm of sigmoid colon"},
+    {"code": "C18.9", "system": "ICD10", "display": "Malignant neoplasm of colon, unspecified"},
+    {"code": "C19", "system": "ICD10", "display": "Malignant neoplasm of rectosigmoid junction"},
+    {"code": "C20", "system": "ICD10", "display": "Malignant neoplasm of rectum"}
+  ],
+  "Total Colectomy": [
+    {"code": "44150", "system": "CPT", "display": "Colectomy, total, abdominal"},
+    {"code": "44151", "system": "CPT", "display": "Colectomy, total, abdominal with proctectomy"},
+    {"code": "44155", "system": "CPT", "display": "Colectomy, total, abdominal with continent ileostomy"},
+    {"code": "44156", "system": "CPT", "display": "Colectomy, total, abdominal with ileostomy"},
+    {"code": "44157", "system": "CPT", "display": "Colectomy, total, abdominal with ileoanal anastomosis"},
+    {"code": "44158", "system": "CPT", "display": "Colectomy, total, abdominal with ileoanal anastomosis with reservoir"}
+  ],
+  "Bilateral Mastectomy": [
+    {"code": "19303", "system": "CPT", "display": "Mastectomy, simple, complete, bilateral"}
+  ],
+  "Unilateral Mastectomy Left": [
+    {"code": "19301", "system": "CPT", "display": "Mastectomy, partial, left"},
+    {"code": "19302", "system": "CPT", "display": "Mastectomy, subcutaneous, left"}
+  ],
+  "Unilateral Mastectomy Right": [
+    {"code": "19301-RT", "system": "CPT", "display": "Mastectomy, partial, right"},
+    {"code": "19302-RT", "system": "CPT", "display": "Mastectomy, subcutaneous, right"}
+  ],
+  "History of Bilateral Mastectomy": [
+    {"code": "Z90.13", "system": "ICD10", "display": "Acquired absence of bilateral breasts and nipples"}
+  ],
+  "Flexible Sigmoidoscopy": [
+    {"code": "45330", "system": "CPT", "display": "Sigmoidoscopy, flexible, diagnostic"},
+    {"code": "45331", "system": "CPT", "display": "Sigmoidoscopy, flexible, with biopsy"},
+    {"code": "45332", "system": "CPT", "display": "Sigmoidoscopy, flexible, with foreign body removal"},
+    {"code": "45333", "system": "CPT", "display": "Sigmoidoscopy, flexible, with polypectomy by hot biopsy"},
+    {"code": "45334", "system": "CPT", "display": "Sigmoidoscopy, flexible, with control of bleeding"},
+    {"code": "45335", "system": "CPT", "display": "Sigmoidoscopy, flexible, with directed submucosal injection"}
+  ],
+  "FIT-DNA": [
+    {"code": "81528", "system": "CPT", "display": "Oncology, colorectal screening, multi-target stool DNA"},
+    {"code": "G0464", "system": "HCPCS", "display": "Colorectal cancer screening, stool-based DNA and FIT"}
+  ],
+  "CT Colonography": [
+    {"code": "74261", "system": "CPT", "display": "CT colonography, diagnostic"},
+    {"code": "74262", "system": "CPT", "display": "CT colonography, screening"},
+    {"code": "74263", "system": "CPT", "display": "CT colonography, screening, with contrast"}
+  ],
+  "ESRD": [
+    {"code": "N18.6", "system": "ICD10", "display": "End stage renal disease"},
+    {"code": "Z99.2", "system": "ICD10", "display": "Dependence on renal dialysis"}
+  ],
+  "Kidney Transplant": [
+    {"code": "Z94.0", "system": "ICD10", "display": "Kidney transplant status"},
+    {"code": "T86.10", "system": "ICD10", "display": "Unspecified complication of kidney transplant"}
+  ],
+  "Pregnancy": [
+    {"code": "O09.90", "system": "ICD10", "display": "Supervision of high risk pregnancy, unspecified"},
+    {"code": "Z33.1", "system": "ICD10", "display": "Pregnant state, incidental"},
+    {"code": "Z34.00", "system": "ICD10", "display": "Encounter for supervision of normal first pregnancy"}
+  ],
+  "Nonacute Inpatient": [
+    {"code": "99304", "system": "CPT", "display": "Initial nursing facility care, low complexity"},
+    {"code": "99305", "system": "CPT", "display": "Initial nursing facility care, moderate complexity"},
+    {"code": "99306", "system": "CPT", "display": "Initial nursing facility care, high complexity"}
+  ],
+  "Eye Exam": [
+    {"code": "92002", "system": "CPT", "display": "Ophthalmologic exam, new patient, intermediate"},
+    {"code": "92004", "system": "CPT", "display": "Ophthalmologic exam, new patient, comprehensive"},
+    {"code": "92012", "system": "CPT", "display": "Ophthalmologic exam, established patient, intermediate"},
+    {"code": "92014", "system": "CPT", "display": "Ophthalmologic exam, established patient, comprehensive"}
+  ],
+  "Diabetic Retinal Screening": [
+    {"code": "92227", "system": "CPT", "display": "Remote imaging for retinal disease screening"},
+    {"code": "92228", "system": "CPT", "display": "Remote imaging for retinal disease monitoring"}
+  ],
+  "Urine Protein Tests": [
+    {"code": "81001", "system": "CPT", "display": "Urinalysis, automated, with microscopy"},
+    {"code": "81003", "system": "CPT", "display": "Urinalysis, automated, without microscopy"},
+    {"code": "2888-6", "system": "LOINC", "display": "Protein [Mass/volume] in Urine"},
+    {"code": "5804-0", "system": "LOINC", "display": "Protein [Mass/volume] in Urine by Test strip"}
+  ],
+  "ACE Inhibitors": [
+    {"code": "36200110", "system": "GPI", "display": "Lisinopril"},
+    {"code": "36200020", "system": "GPI", "display": "Enalapril"},
+    {"code": "36200050", "system": "GPI", "display": "Ramipril"},
+    {"code": "36200030", "system": "GPI", "display": "Benazepril"}
+  ],
+  "ARB Medications": [
+    {"code": "36400010", "system": "GPI", "display": "Losartan"},
+    {"code": "36400020", "system": "GPI", "display": "Valsartan"},
+    {"code": "36400030", "system": "GPI", "display": "Irbesartan"},
+    {"code": "36400040", "system": "GPI", "display": "Olmesartan"}
   ]
 }

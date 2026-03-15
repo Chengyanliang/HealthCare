@@ -162,7 +162,8 @@ CQLValue RetrieveProvider::retrieve(const std::string& dataType,
     else if (dataType == "Observation" || dataType == "LaboratoryTest") {
         for (const auto& lab : ctx.labResults()) {
             if (valueSetName.empty() ||
-                vsMgr.isMember(valueSetName, lab.loincCode, "LOINC")) {
+                vsMgr.isMember(valueSetName, lab.loincCode, "LOINC") ||
+                vsMgr.isMember(valueSetName, lab.loincCode, "CPT")) {
                 results.push_back(labToTuple(lab));
             }
         }
