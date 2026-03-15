@@ -1,0 +1,123 @@
+{
+  "Cervical Cytology": [
+    {"code": "88141", "system": "CPT", "display": "Cytopathology, cervical or vaginal"},
+    {"code": "88142", "system": "CPT", "display": "Cytopathology, thin layer preparation"},
+    {"code": "88143", "system": "CPT", "display": "Cytopathology, thin layer, rescreening"},
+    {"code": "88147", "system": "CPT", "display": "Cytopathology, automated screening"},
+    {"code": "88148", "system": "CPT", "display": "Cytopathology, automated rescreening"},
+    {"code": "88150", "system": "CPT", "display": "Cytopathology, manual screening"},
+    {"code": "88152", "system": "CPT", "display": "Cytopathology, automated thin layer"},
+    {"code": "88153", "system": "CPT", "display": "Cytopathology, manual screening, rescreening"},
+    {"code": "88164", "system": "CPT", "display": "Cytopathology, manual screening, Bethesda"},
+    {"code": "88165", "system": "CPT", "display": "Cytopathology, manual rescreening, Bethesda"},
+    {"code": "88166", "system": "CPT", "display": "Cytopathology, manual screening, definitive"},
+    {"code": "88167", "system": "CPT", "display": "Cytopathology, automated screening, definitive"},
+    {"code": "88174", "system": "CPT", "display": "Cytopathology, automated thin layer, screening"},
+    {"code": "88175", "system": "CPT", "display": "Cytopathology, automated thin layer, definitive"}
+  ],
+  "HPV Tests": [
+    {"code": "87620", "system": "CPT", "display": "HPV detection, direct probe"},
+    {"code": "87621", "system": "CPT", "display": "HPV detection, amplified probe"},
+    {"code": "87622", "system": "CPT", "display": "HPV detection, quantification"},
+    {"code": "87624", "system": "CPT", "display": "HPV detection, high-risk types"},
+    {"code": "87625", "system": "CPT", "display": "HPV detection, types 16 and 18"}
+  ],
+  "Hysterectomy": [
+    {"code": "58150", "system": "CPT", "display": "Total abdominal hysterectomy"},
+    {"code": "58152", "system": "CPT", "display": "Total abdominal hysterectomy with colpo-urethrocystopexy"},
+    {"code": "58200", "system": "CPT", "display": "Total abdominal hysterectomy with partial vaginectomy"},
+    {"code": "58260", "system": "CPT", "display": "Vaginal hysterectomy"},
+    {"code": "58262", "system": "CPT", "display": "Vaginal hysterectomy with tube/ovary removal"},
+    {"code": "58267", "system": "CPT", "display": "Vaginal hysterectomy with colpo-urethrocystopexy"},
+    {"code": "58270", "system": "CPT", "display": "Vaginal hysterectomy with enterocele repair"},
+    {"code": "58275", "system": "CPT", "display": "Vaginal hysterectomy with revision of vaginal vault"},
+    {"code": "58280", "system": "CPT", "display": "Vaginal hysterectomy with repair of enterocele"},
+    {"code": "58290", "system": "CPT", "display": "Vaginal hysterectomy with tube/ovary removal with repair"},
+    {"code": "58291", "system": "CPT", "display": "Vaginal hysterectomy, complex"},
+    {"code": "58541", "system": "CPT", "display": "Laparoscopy, supracervical hysterectomy"},
+    {"code": "58542", "system": "CPT", "display": "Laparoscopy, supracervical hysterectomy, >250g"},
+    {"code": "58543", "system": "CPT", "display": "Laparoscopy, supracervical hysterectomy with tube/ovary"},
+    {"code": "58544", "system": "CPT", "display": "Laparoscopy, supracervical hysterectomy, >250g with tube/ovary"},
+    {"code": "58548", "system": "CPT", "display": "Laparoscopy, total hysterectomy"},
+    {"code": "58550", "system": "CPT", "display": "Laparoscopy, vaginal hysterectomy"},
+    {"code": "58570", "system": "CPT", "display": "Laparoscopy, total hysterectomy, uterus <=250g"},
+    {"code": "58571", "system": "CPT", "display": "Laparoscopy, total hysterectomy with tube/ovary, <=250g"},
+    {"code": "58572", "system": "CPT", "display": "Laparoscopy, total hysterectomy, >250g"},
+    {"code": "58573", "system": "CPT", "display": "Laparoscopy, total hysterectomy with tube/ovary, >250g"}
+  ],
+  "Mammography": [
+    {"code": "77056", "system": "CPT", "display": "Mammography, bilateral"},
+    {"code": "77057", "system": "CPT", "display": "Screening mammography, bilateral"},
+    {"code": "77061", "system": "CPT", "display": "Digital breast tomosynthesis, unilateral"},
+    {"code": "77062", "system": "CPT", "display": "Digital breast tomosynthesis, bilateral"},
+    {"code": "77063", "system": "CPT", "display": "Screening digital breast tomosynthesis, bilateral"},
+    {"code": "77065", "system": "CPT", "display": "Diagnostic mammography, unilateral"},
+    {"code": "77066", "system": "CPT", "display": "Diagnostic mammography, bilateral"},
+    {"code": "77067", "system": "CPT", "display": "Screening mammography, bilateral, 2D"}
+  ],
+  "Colonoscopy": [
+    {"code": "44388", "system": "CPT", "display": "Colonoscopy through stoma"},
+    {"code": "44389", "system": "CPT", "display": "Colonoscopy through stoma with biopsy"},
+    {"code": "44390", "system": "CPT", "display": "Colonoscopy through stoma with foreign body removal"},
+    {"code": "44391", "system": "CPT", "display": "Colonoscopy through stoma with control of bleeding"},
+    {"code": "44392", "system": "CPT", "display": "Colonoscopy through stoma with polypectomy"},
+    {"code": "45378", "system": "CPT", "display": "Colonoscopy, diagnostic"},
+    {"code": "45380", "system": "CPT", "display": "Colonoscopy with biopsy"},
+    {"code": "45381", "system": "CPT", "display": "Colonoscopy with directed submucosal injection"},
+    {"code": "45382", "system": "CPT", "display": "Colonoscopy with control of bleeding"},
+    {"code": "45383", "system": "CPT", "display": "Colonoscopy with ablation"},
+    {"code": "45384", "system": "CPT", "display": "Colonoscopy with polypectomy by hot biopsy"},
+    {"code": "45385", "system": "CPT", "display": "Colonoscopy with polypectomy by snare"},
+    {"code": "45386", "system": "CPT", "display": "Colonoscopy with balloon dilation"},
+    {"code": "45388", "system": "CPT", "display": "Colonoscopy with stent placement"},
+    {"code": "45389", "system": "CPT", "display": "Colonoscopy with endoscopic stent placement"},
+    {"code": "45390", "system": "CPT", "display": "Colonoscopy with endoscopic mucosal resection"},
+    {"code": "45391", "system": "CPT", "display": "Colonoscopy with endoscopic ultrasound"},
+    {"code": "45392", "system": "CPT", "display": "Colonoscopy with transendoscopic ultrasound guided FNA"},
+    {"code": "45393", "system": "CPT", "display": "Colonoscopy with decompression"},
+    {"code": "45398", "system": "CPT", "display": "Colonoscopy with band ligation"}
+  ],
+  "HbA1c Lab Test": [
+    {"code": "4548-4", "system": "LOINC", "display": "Hemoglobin A1c/Hemoglobin.total in Blood"},
+    {"code": "4549-2", "system": "LOINC", "display": "Hemoglobin A1c/Hemoglobin.total in Blood by Electrophoresis"},
+    {"code": "17856-6", "system": "LOINC", "display": "Hemoglobin A1c/Hemoglobin.total in Blood by HPLC"},
+    {"code": "62388-4", "system": "LOINC", "display": "Hemoglobin A1c/Hemoglobin.total in Blood by JDS/JSCC"},
+    {"code": "71875-9", "system": "LOINC", "display": "Hemoglobin A1c/Hemoglobin.total in Blood by IFCC"},
+    {"code": "83036", "system": "CPT", "display": "Hemoglobin; glycosylated (A1c)"},
+    {"code": "83037", "system": "CPT", "display": "Hemoglobin; glycosylated, home device"}
+  ],
+  "Essential Hypertension": [
+    {"code": "I10", "system": "ICD10", "display": "Essential (primary) hypertension"},
+    {"code": "I11.0", "system": "ICD10", "display": "Hypertensive heart disease with heart failure"},
+    {"code": "I11.9", "system": "ICD10", "display": "Hypertensive heart disease without heart failure"},
+    {"code": "I12.0", "system": "ICD10", "display": "Hypertensive chronic kidney disease with stage 5"},
+    {"code": "I12.9", "system": "ICD10", "display": "Hypertensive chronic kidney disease with stage 1-4"},
+    {"code": "I13.0", "system": "ICD10", "display": "Hypertensive heart and chronic kidney disease with HF and stage 1-4"},
+    {"code": "I13.10", "system": "ICD10", "display": "Hypertensive heart and chronic kidney disease without HF with stage 1-4"},
+    {"code": "I13.2", "system": "ICD10", "display": "Hypertensive heart and chronic kidney disease with HF and stage 5"}
+  ],
+  "Systolic Blood Pressure": [
+    {"code": "8480-6", "system": "LOINC", "display": "Systolic blood pressure"}
+  ],
+  "Diastolic Blood Pressure": [
+    {"code": "8462-4", "system": "LOINC", "display": "Diastolic blood pressure"}
+  ],
+  "Diabetes": [
+    {"code": "E10.10", "system": "ICD10", "display": "Type 1 diabetes with ketoacidosis without coma"},
+    {"code": "E10.65", "system": "ICD10", "display": "Type 1 diabetes with hyperglycemia"},
+    {"code": "E10.9", "system": "ICD10", "display": "Type 1 diabetes without complications"},
+    {"code": "E11.00", "system": "ICD10", "display": "Type 2 diabetes with hyperosmolarity without coma"},
+    {"code": "E11.65", "system": "ICD10", "display": "Type 2 diabetes with hyperglycemia"},
+    {"code": "E11.9", "system": "ICD10", "display": "Type 2 diabetes without complications"},
+    {"code": "E13.9", "system": "ICD10", "display": "Other specified diabetes without complications"}
+  ],
+  "FOBT": [
+    {"code": "82270", "system": "CPT", "display": "Blood, occult, by peroxidase activity, feces"},
+    {"code": "82274", "system": "CPT", "display": "Blood, occult, feces, immunoassay"},
+    {"code": "2335-8", "system": "LOINC", "display": "Hemoglobin.gastrointestinal [Presence] in Stool"},
+    {"code": "14563-1", "system": "LOINC", "display": "Hemoglobin.gastrointestinal [Presence] in Stool by Immunologic method"},
+    {"code": "14564-9", "system": "LOINC", "display": "Hemoglobin.gastrointestinal [Presence] in Stool --1st specimen"},
+    {"code": "14565-6", "system": "LOINC", "display": "Hemoglobin.gastrointestinal [Presence] in Stool --2nd specimen"},
+    {"code": "29771-3", "system": "LOINC", "display": "Hemoglobin.gastrointestinal [Presence] in Stool by Immunoassay"}
+  ]
+}
