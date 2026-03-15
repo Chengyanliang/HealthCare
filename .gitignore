@@ -1,0 +1,20 @@
+# Build artifacts
+*.o
+*.a
+*.so
+*.dylib
+.sconsign.dblite
+.sconsign*.dblite
+
+# Executables
+hedis_cql
+hedis_cql_ctl
+hedis_cql_merge
+hedis_cql_tests
+
+# IDE / editor
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
