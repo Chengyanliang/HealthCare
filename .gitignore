@@ -12,6 +12,9 @@ hedis_cql_ctl
 hedis_cql_merge
 hedis_cql_tests
 
+# Oracle wallet (credentials)
+wallet/
+
 # IDE / editor
 .vscode/
 .idea/
