@@ -156,6 +156,11 @@ merge_env = env.Clone()
 merge_env.Append(LIBS=[hedis_lib])
 hedis_merge = merge_env.Program('hedis_cql_merge', ['src/main_merge.cpp'])
 
+# End-to-end test (Oracle required)
+e2e_env = env.Clone()
+e2e_env.Append(LIBS=[hedis_lib])
+hedis_e2e = e2e_env.Program('test_e2e_measures', ['test_e2e_measures.cpp'])
+
 Default(hedis_worker, hedis_ctl, hedis_merge)
 
 # ---------------------------------------------------------------------------

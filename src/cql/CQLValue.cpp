@@ -315,6 +315,15 @@ CQLValue CQLValue::cqlAdd(const CQLValue& rhs) const {
         double r = (rhs.m_type == CQLType::Integer) ? static_cast<double>(rhs.m_int) : rhs.m_decimal;
         return fromDecimal(l + r);
     }
+    // Date arithmetic: Date + Quantity(years/months/days)
+    if (m_type == CQLType::Date && rhs.m_type == CQLType::Quantity) {
+        if (rhs.m_quantity.unit == "years" || rhs.m_quantity.unit == "year")
+            return fromDate(m_date.addYears(static_cast<int>(rhs.m_quantity.value)));
+        if (rhs.m_quantity.unit == "months" || rhs.m_quantity.unit == "month")
+            return fromDate(m_date.addMonths(static_cast<int>(rhs.m_quantity.value)));
+        if (rhs.m_quantity.unit == "days" || rhs.m_quantity.unit == "day")
+            return fromDate(m_date.addDays(static_cast<int>(rhs.m_quantity.value)));
+    }
     return null();
 }
 

@@ -23,13 +23,22 @@ void ValueSetManager::loadFromDatabase(OCI_Connection* conn, const std::string& 
 
 #ifdef HAS_OCILIB
     OCI_Statement* stmt = OCI_StatementCreate(conn);
-    OCI_ExecuteStmtFmt(stmt,
+    OCI_Prepare(stmt,
         "SELECT VALUESET_NAME, CODE, CODE_SYSTEM, DISPLAY "
-        "FROM SMA_CQL_VALUESETS WHERE VERSION = '%s' ORDER BY VALUESET_NAME",
-        version.c_str());
+        "FROM SMA_CQL_VALUESETS WHERE VERSION = :ver ORDER BY VALUESET_NAME");
+    std::string verBuf = version;
+    OCI_BindString(stmt, ":ver", &verBuf[0], verBuf.size());
+
+    if (!OCI_Execute(stmt)) {
+        OCI_Error* err = OCI_GetLastError();
+        fprintf(stderr, "ValueSetManager: query failed: %s\n",
+                err ? OCI_ErrorGetString(err) : "unknown");
+        OCI_StatementFree(stmt);
+        return;
+    }
 
     OCI_Resultset* rs = OCI_GetResultset(stmt);
-    while (OCI_FetchNext(rs)) {
+    while (rs && OCI_FetchNext(rs)) {
         std::string vsName = OCI_GetString(rs, 1) ? OCI_GetString(rs, 1) : "";
         ValueSetEntry entry;
         entry.code       = OCI_GetString(rs, 2) ? OCI_GetString(rs, 2) : "";

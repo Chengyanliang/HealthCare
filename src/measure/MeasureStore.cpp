@@ -24,17 +24,34 @@ std::vector<MeasureDefinition> MeasureStore::loadActiveMeasures(
 #ifdef HAS_OCILIB
     if (m_conn) {
         OCI_Statement* stmt = OCI_StatementCreate(m_conn);
-        OCI_ExecuteStmtFmt(stmt,
-            "SELECT MEASURE_ID, VERSION, CQL_TEXT FROM SMA_CQL_MEASURES "
-            "WHERE STATUS = 'A' AND VERSION LIKE '%%%s%%' ORDER BY MEASURE_ID",
-            measurementYear.c_str());
+
+        // Use bind variable instead of format string for LIKE pattern
+        std::string versionPattern = "%" + measurementYear + "%";
+        OCI_Prepare(stmt,
+            "SELECT MEASURE_ID, VERSION, TO_CHAR(CQL_TEXT) FROM SMA_CQL_MEASURES "
+            "WHERE STATUS = 'A' AND VERSION LIKE :ver ORDER BY MEASURE_ID");
+        OCI_BindString(stmt, ":ver", &versionPattern[0], versionPattern.size());
+
+        if (!OCI_Execute(stmt)) {
+            OCI_Error* err = OCI_GetLastError();
+            fprintf(stderr, "MeasureStore: query failed: %s\n",
+                    err ? OCI_ErrorGetString(err) : "unknown");
+            OCI_StatementFree(stmt);
+            return measures;
+        }
 
         OCI_Resultset* rs = OCI_GetResultset(stmt);
-        while (OCI_FetchNext(rs)) {
+        while (rs && OCI_FetchNext(rs)) {
             MeasureDefinition def;
             def.measureId = OCI_GetString(rs, 1) ? OCI_GetString(rs, 1) : "";
             def.version   = OCI_GetString(rs, 2) ? OCI_GetString(rs, 2) : "";
             def.cqlText   = OCI_GetString(rs, 3) ? OCI_GetString(rs, 3) : "";
+
+            if (def.cqlText.empty()) {
+                fprintf(stderr, "MeasureStore: %s — empty CQL text (CLOB read failed?)\n",
+                        def.measureId.c_str());
+                continue;
+            }
 
             // Parse CQL
             auto ast = m_parser.parse(def.cqlText);
@@ -42,6 +59,9 @@ std::vector<MeasureDefinition> MeasureStore::loadActiveMeasures(
                 def.ast = std::move(ast);
                 def.resolvePopulations();
                 measures.push_back(std::move(def));
+            } else {
+                fprintf(stderr, "MeasureStore: %s — CQL parse failed\n",
+                        def.measureId.c_str());
             }
         }
         OCI_StatementFree(stmt);
