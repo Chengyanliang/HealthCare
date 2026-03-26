@@ -11,9 +11,15 @@ hedis_cql
 hedis_cql_ctl
 hedis_cql_merge
 hedis_cql_tests
+test_e2e_measures
+test_oracle_connection
 
-# Oracle wallet (credentials)
+# Oracle wallet (credentials — never commit these)
 wallet/
+Wallet_hediscql.zip
+
+# macOS metadata
+._*
 
 # IDE / editor
 .vscode/
