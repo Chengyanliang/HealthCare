@@ -70,6 +70,7 @@ int main(int argc, char* argv[]) {
     std::string walletDir = "wallet";
     std::string tnsService = "hediscql_tp";
     std::string dbUser = "ADMIN";
+    bool useLocal = false;
 
     for (int i = 1; i < argc; ++i) {
         if (strcmp(argv[i], "-w") == 0 && i + 1 < argc)
@@ -78,19 +79,29 @@ int main(int argc, char* argv[]) {
             tnsService = argv[++i];
         else if (strcmp(argv[i], "-u") == 0 && i + 1 < argc)
             dbUser = argv[++i];
+        else if (strcmp(argv[i], "-l") == 0) {
+            useLocal = true;
+            tnsService = "localhost:1521/XEPDB1";
+            dbUser = "hedis";
+        }
     }
 
     std::cout << "=== HEDIS CQL End-to-End Test ===\n\n";
+    std::cout << "Mode: " << (useLocal ? "Local Oracle XE" : "Oracle Cloud") << "\n\n";
 
     // --- Connect to Oracle ---
     OCI_Connection* conn = nullptr;
 #ifdef HAS_OCILIB
-    const char* password = std::getenv("HEDIS_DB_PASSWORD");
+    const char* password = useLocal
+        ? std::getenv("HEDIS_LOCAL_PASSWORD")
+        : std::getenv("HEDIS_DB_PASSWORD");
+
     if (!password || !password[0]) {
-        std::cerr << "Error: HEDIS_DB_PASSWORD not set\n";
+        std::cerr << "Error: " << (useLocal ? "HEDIS_LOCAL_PASSWORD" : "HEDIS_DB_PASSWORD")
+                  << " not set\n";
         return 1;
     }
-    if (!std::getenv("TNS_ADMIN"))
+    if (!useLocal && !std::getenv("TNS_ADMIN"))
         setenv("TNS_ADMIN", walletDir.c_str(), 1);
 
     if (!OCI_Initialize(ociErrorHandler, nullptr, OCI_ENV_DEFAULT)) {
