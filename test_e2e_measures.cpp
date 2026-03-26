@@ -16,6 +16,11 @@
 
 #ifdef HAS_OCILIB
 #include <ocilib.h>
+
+static void ociErrorHandler(OCI_Error* err) {
+    std::cerr << "OCI Error [ORA-" << OCI_ErrorGetOCICode(err) << "]: "
+              << OCI_ErrorGetString(err) << "\n";
+}
 #endif
 
 // Expected outcome per (patientId, measureId)
@@ -88,7 +93,7 @@ int main(int argc, char* argv[]) {
     if (!std::getenv("TNS_ADMIN"))
         setenv("TNS_ADMIN", walletDir.c_str(), 1);
 
-    if (!OCI_Initialize(nullptr, nullptr, OCI_ENV_DEFAULT)) {
+    if (!OCI_Initialize(ociErrorHandler, nullptr, OCI_ENV_DEFAULT)) {
         std::cerr << "Failed to initialize OCILIB\n";
         return 1;
     }
@@ -128,6 +133,16 @@ int main(int argc, char* argv[]) {
                   << engine.valueSetManager().totalCodeCount() << " codes from files\n";
     }
     std::cout << "\n";
+
+    // --- Clear previous E2E results ---
+#ifdef HAS_OCILIB
+    {
+        OCI_Statement* del = OCI_StatementCreate(conn);
+        OCI_ExecuteStmt(del, "DELETE FROM SMA_CQL_RESULTS WHERE JOB_ID = 'E2E_TEST'");
+        OCI_Commit(conn);
+        OCI_StatementFree(del);
+    }
+#endif
 
     // --- Load patients and evaluate ---
     hedis::PatientLoader loader(conn);
@@ -177,13 +192,33 @@ int main(int argc, char* argv[]) {
                       << " NR=" << r.numerator
                       << " EX=" << r.denominatorExclusion
                       << "  → " << outcome << "\n";
+#ifdef HAS_OCILIB
+            {
+                std::string sql =
+                    "INSERT INTO SMA_CQL_RESULTS "
+                    "(PATIENT_ID,MEASURE_ID,INITIAL_POP,DENOMINATOR,NUMERATOR,DENOM_EXCLUSION,JOB_ID,PROCESS_DATE) "
+                    "VALUES ('" + patient.patientId + "','" + r.measureId + "','"
+                    + (r.initialPopulation    ? "Y" : "N") + "','"
+                    + (r.denominator          ? "Y" : "N") + "','"
+                    + (r.numerator            ? "Y" : "N") + "','"
+                    + (r.denominatorExclusion ? "Y" : "N") + "','E2E_TEST',SYSDATE)";
+                OCI_Statement* ins = OCI_StatementCreate(conn);
+                OCI_ExecuteStmt(ins, sql.c_str());
+                OCI_StatementFree(ins);
+            }
+#endif
         }
         allResults.push_back(std::move(pr));
     }
 
+#ifdef HAS_OCILIB
+    OCI_Commit(conn);
+    std::cout << "Saved " << (allResults.size() * 5) << " results to SMA_CQL_RESULTS\n";
+#endif
+
     // --- Print comparison table ---
     std::cout << "\n=== Results vs Expected ===\n\n";
-    std::cout << std::left
+    std::cout << std::setfill(' ') << std::left
               << std::setw(8)  << "Patient"
               << std::setw(12) << "CCS"
               << std::setw(12) << "BCS"
@@ -198,7 +233,7 @@ int main(int argc, char* argv[]) {
         const auto& act = allResults[i];
         const auto& exp = expected[i];
 
-        std::cout << std::setw(8) << act.patientId;
+        std::cout << std::left << std::setw(8) << act.patientId;
         for (const auto& mid : measureOrder) {
             auto actIt = act.outcomes.find(mid);
             auto expIt = exp.outcomes.find(mid);
@@ -207,10 +242,10 @@ int main(int argc, char* argv[]) {
 
             bool match = (actVal == expVal);
             if (match) {
-                std::cout << std::setw(12) << actVal;
+                std::cout << std::left << std::setw(12) << actVal;
                 ++pass;
             } else {
-                std::cout << std::setw(12) << (actVal + "!" );
+                std::cout << std::left << std::setw(12) << (actVal + "!");
                 ++fail;
             }
         }
