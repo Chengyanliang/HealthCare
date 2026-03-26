@@ -1,0 +1,12 @@
+MEMBER_ID,LOINC_CODE,TEST_NAME,RESULT_DATE,NUMERIC_VALUE,STRING_VALUE,UNITS,STATUS
+P011,4548-4,Hemoglobin A1c,2026-03-15 00:00:00,7.2,7.2,%,final
+P002,87624,"HPV detection, high-risk types",2023-06-16 00:00:00,,Negative,,final
+P003,82274,"Blood, occult, feces, immunoassay",2026-04-01 00:00:00,,Negative,,final
+P003,4548-4,Hemoglobin A1c,2026-07-15 00:00:00,6.8,6.8,%,final
+P005,8480-6,Systolic blood pressure,2026-09-01 00:00:00,128.0,128,mmHg,final
+P005,8462-4,Diastolic blood pressure,2026-09-01 00:00:00,78.0,78,mmHg,final
+P007,4548-4,Hemoglobin A1c,2026-05-20 00:00:00,9.5,9.5,%,final
+P008,8480-6,Systolic blood pressure,2026-08-10 00:00:00,155.0,155,mmHg,final
+P008,8462-4,Diastolic blood pressure,2026-08-10 00:00:00,95.0,95,mmHg,final
+P010,8480-6,Systolic blood pressure,2026-10-05 00:00:00,132.0,132,mmHg,final
+P010,8462-4,Diastolic blood pressure,2026-10-05 00:00:00,82.0,82,mmHg,final

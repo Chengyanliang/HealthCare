@@ -1,0 +1,163 @@
+VALUESET_NAME,CODE,CODE_SYSTEM,DISPLAY,VERSION
+Cervical Cytology,88141,CPT,"Cytopathology, cervical or vaginal",HEDIS-2026
+Cervical Cytology,88142,CPT,"Cytopathology, thin layer preparation",HEDIS-2026
+Cervical Cytology,88143,CPT,"Cytopathology, thin layer, rescreening",HEDIS-2026
+Cervical Cytology,88147,CPT,"Cytopathology, automated screening",HEDIS-2026
+Cervical Cytology,88148,CPT,"Cytopathology, automated rescreening",HEDIS-2026
+Cervical Cytology,88150,CPT,"Cytopathology, manual screening",HEDIS-2026
+Cervical Cytology,88152,CPT,"Cytopathology, automated thin layer",HEDIS-2026
+Cervical Cytology,88153,CPT,"Cytopathology, manual screening, rescreening",HEDIS-2026
+Cervical Cytology,88164,CPT,"Cytopathology, manual screening, Bethesda",HEDIS-2026
+Cervical Cytology,88165,CPT,"Cytopathology, manual rescreening, Bethesda",HEDIS-2026
+Cervical Cytology,88166,CPT,"Cytopathology, manual screening, definitive",HEDIS-2026
+Cervical Cytology,88167,CPT,"Cytopathology, automated screening, definitive",HEDIS-2026
+Cervical Cytology,88174,CPT,"Cytopathology, automated thin layer, screening",HEDIS-2026
+Cervical Cytology,88175,CPT,"Cytopathology, automated thin layer, definitive",HEDIS-2026
+HPV Tests,87620,CPT,"HPV detection, direct probe",HEDIS-2026
+HPV Tests,87621,CPT,"HPV detection, amplified probe",HEDIS-2026
+HPV Tests,87622,CPT,"HPV detection, quantification",HEDIS-2026
+HPV Tests,87624,CPT,"HPV detection, high-risk types",HEDIS-2026
+HPV Tests,87625,CPT,"HPV detection, types 16 and 18",HEDIS-2026
+Hysterectomy,58150,CPT,Total abdominal hysterectomy,HEDIS-2026
+Hysterectomy,58152,CPT,Total abdominal hysterectomy with colpo-urethrocystopexy,HEDIS-2026
+Hysterectomy,58200,CPT,Total abdominal hysterectomy with partial vaginectomy,HEDIS-2026
+Hysterectomy,58260,CPT,Vaginal hysterectomy,HEDIS-2026
+Hysterectomy,58262,CPT,Vaginal hysterectomy with tube/ovary removal,HEDIS-2026
+Hysterectomy,58267,CPT,Vaginal hysterectomy with colpo-urethrocystopexy,HEDIS-2026
+Hysterectomy,58270,CPT,Vaginal hysterectomy with enterocele repair,HEDIS-2026
+Hysterectomy,58275,CPT,Vaginal hysterectomy with revision of vaginal vault,HEDIS-2026
+Hysterectomy,58280,CPT,Vaginal hysterectomy with repair of enterocele,HEDIS-2026
+Hysterectomy,58290,CPT,Vaginal hysterectomy with tube/ovary removal with repair,HEDIS-2026
+Hysterectomy,58291,CPT,"Vaginal hysterectomy, complex",HEDIS-2026
+Hysterectomy,58541,CPT,"Laparoscopy, supracervical hysterectomy",HEDIS-2026
+Hysterectomy,58542,CPT,"Laparoscopy, supracervical hysterectomy, >250g",HEDIS-2026
+Hysterectomy,58543,CPT,"Laparoscopy, supracervical hysterectomy with tube/ovary",HEDIS-2026
+Hysterectomy,58544,CPT,"Laparoscopy, supracervical hysterectomy, >250g with tube/ovary",HEDIS-2026
+Hysterectomy,58548,CPT,"Laparoscopy, total hysterectomy",HEDIS-2026
+Hysterectomy,58550,CPT,"Laparoscopy, vaginal hysterectomy",HEDIS-2026
+Hysterectomy,58570,CPT,"Laparoscopy, total hysterectomy, uterus <=250g",HEDIS-2026
+Hysterectomy,58571,CPT,"Laparoscopy, total hysterectomy with tube/ovary, <=250g",HEDIS-2026
+Hysterectomy,58572,CPT,"Laparoscopy, total hysterectomy, >250g",HEDIS-2026
+Hysterectomy,58573,CPT,"Laparoscopy, total hysterectomy with tube/ovary, >250g",HEDIS-2026
+Mammography,77056,CPT,"Mammography, bilateral",HEDIS-2026
+Mammography,77057,CPT,"Screening mammography, bilateral",HEDIS-2026
+Mammography,77061,CPT,"Digital breast tomosynthesis, unilateral",HEDIS-2026
+Mammography,77062,CPT,"Digital breast tomosynthesis, bilateral",HEDIS-2026
+Mammography,77063,CPT,"Screening digital breast tomosynthesis, bilateral",HEDIS-2026
+Mammography,77065,CPT,"Diagnostic mammography, unilateral",HEDIS-2026
+Mammography,77066,CPT,"Diagnostic mammography, bilateral",HEDIS-2026
+Mammography,77067,CPT,"Screening mammography, bilateral, 2D",HEDIS-2026
+Colonoscopy,44388,CPT,Colonoscopy through stoma,HEDIS-2026
+Colonoscopy,44389,CPT,Colonoscopy through stoma with biopsy,HEDIS-2026
+Colonoscopy,44390,CPT,Colonoscopy through stoma with foreign body removal,HEDIS-2026
+Colonoscopy,44391,CPT,Colonoscopy through stoma with control of bleeding,HEDIS-2026
+Colonoscopy,44392,CPT,Colonoscopy through stoma with polypectomy,HEDIS-2026
+Colonoscopy,45378,CPT,"Colonoscopy, diagnostic",HEDIS-2026
+Colonoscopy,45380,CPT,Colonoscopy with biopsy,HEDIS-2026
+Colonoscopy,45381,CPT,Colonoscopy with directed submucosal injection,HEDIS-2026
+Colonoscopy,45382,CPT,Colonoscopy with control of bleeding,HEDIS-2026
+Colonoscopy,45383,CPT,Colonoscopy with ablation,HEDIS-2026
+Colonoscopy,45384,CPT,Colonoscopy with polypectomy by hot biopsy,HEDIS-2026
+Colonoscopy,45385,CPT,Colonoscopy with polypectomy by snare,HEDIS-2026
+Colonoscopy,45386,CPT,Colonoscopy with balloon dilation,HEDIS-2026
+Colonoscopy,45388,CPT,Colonoscopy with stent placement,HEDIS-2026
+Colonoscopy,45389,CPT,Colonoscopy with endoscopic stent placement,HEDIS-2026
+Colonoscopy,45390,CPT,Colonoscopy with endoscopic mucosal resection,HEDIS-2026
+Colonoscopy,45391,CPT,Colonoscopy with endoscopic ultrasound,HEDIS-2026
+Colonoscopy,45392,CPT,Colonoscopy with transendoscopic ultrasound guided FNA,HEDIS-2026
+Colonoscopy,45393,CPT,Colonoscopy with decompression,HEDIS-2026
+Colonoscopy,45398,CPT,Colonoscopy with band ligation,HEDIS-2026
+HbA1c Lab Test,4548-4,LOINC,Hemoglobin A1c/Hemoglobin.total in Blood,HEDIS-2026
+HbA1c Lab Test,4549-2,LOINC,Hemoglobin A1c/Hemoglobin.total in Blood by Electrophoresis,HEDIS-2026
+HbA1c Lab Test,17856-6,LOINC,Hemoglobin A1c/Hemoglobin.total in Blood by HPLC,HEDIS-2026
+HbA1c Lab Test,62388-4,LOINC,Hemoglobin A1c/Hemoglobin.total in Blood by JDS/JSCC,HEDIS-2026
+HbA1c Lab Test,71875-9,LOINC,Hemoglobin A1c/Hemoglobin.total in Blood by IFCC,HEDIS-2026
+HbA1c Lab Test,83036,CPT,Hemoglobin; glycosylated (A1c),HEDIS-2026
+HbA1c Lab Test,83037,CPT,"Hemoglobin; glycosylated, home device",HEDIS-2026
+Essential Hypertension,I10,ICD10,Essential (primary) hypertension,HEDIS-2026
+Essential Hypertension,I11.0,ICD10,Hypertensive heart disease with heart failure,HEDIS-2026
+Essential Hypertension,I11.9,ICD10,Hypertensive heart disease without heart failure,HEDIS-2026
+Essential Hypertension,I12.0,ICD10,Hypertensive chronic kidney disease with stage 5,HEDIS-2026
+Essential Hypertension,I12.9,ICD10,Hypertensive chronic kidney disease with stage 1-4,HEDIS-2026
+Essential Hypertension,I13.0,ICD10,Hypertensive heart and chronic kidney disease with HF and stage 1-4,HEDIS-2026
+Essential Hypertension,I13.10,ICD10,Hypertensive heart and chronic kidney disease without HF with stage 1-4,HEDIS-2026
+Essential Hypertension,I13.2,ICD10,Hypertensive heart and chronic kidney disease with HF and stage 5,HEDIS-2026
+Systolic Blood Pressure,8480-6,LOINC,Systolic blood pressure,HEDIS-2026
+Diastolic Blood Pressure,8462-4,LOINC,Diastolic blood pressure,HEDIS-2026
+Diabetes,E10.10,ICD10,Type 1 diabetes with ketoacidosis without coma,HEDIS-2026
+Diabetes,E10.65,ICD10,Type 1 diabetes with hyperglycemia,HEDIS-2026
+Diabetes,E10.9,ICD10,Type 1 diabetes without complications,HEDIS-2026
+Diabetes,E11.00,ICD10,Type 2 diabetes with hyperosmolarity without coma,HEDIS-2026
+Diabetes,E11.65,ICD10,Type 2 diabetes with hyperglycemia,HEDIS-2026
+Diabetes,E11.9,ICD10,Type 2 diabetes without complications,HEDIS-2026
+Diabetes,E13.9,ICD10,Other specified diabetes without complications,HEDIS-2026
+FOBT,82270,CPT,"Blood, occult, by peroxidase activity, feces",HEDIS-2026
+FOBT,82274,CPT,"Blood, occult, feces, immunoassay",HEDIS-2026
+FOBT,2335-8,LOINC,Hemoglobin.gastrointestinal [Presence] in Stool,HEDIS-2026
+FOBT,14563-1,LOINC,Hemoglobin.gastrointestinal [Presence] in Stool by Immunologic method,HEDIS-2026
+FOBT,14564-9,LOINC,Hemoglobin.gastrointestinal [Presence] in Stool --1st specimen,HEDIS-2026
+FOBT,14565-6,LOINC,Hemoglobin.gastrointestinal [Presence] in Stool --2nd specimen,HEDIS-2026
+FOBT,29771-3,LOINC,Hemoglobin.gastrointestinal [Presence] in Stool by Immunoassay,HEDIS-2026
+Cervical Cancer,C53.0,ICD10,Malignant neoplasm of endocervix,HEDIS-2026
+Cervical Cancer,C53.1,ICD10,Malignant neoplasm of exocervix,HEDIS-2026
+Cervical Cancer,C53.8,ICD10,Malignant neoplasm of overlapping sites of cervix uteri,HEDIS-2026
+Cervical Cancer,C53.9,ICD10,"Malignant neoplasm of cervix uteri, unspecified",HEDIS-2026
+Colorectal Cancer,C18.0,ICD10,Malignant neoplasm of cecum,HEDIS-2026
+Colorectal Cancer,C18.2,ICD10,Malignant neoplasm of ascending colon,HEDIS-2026
+Colorectal Cancer,C18.4,ICD10,Malignant neoplasm of transverse colon,HEDIS-2026
+Colorectal Cancer,C18.6,ICD10,Malignant neoplasm of descending colon,HEDIS-2026
+Colorectal Cancer,C18.7,ICD10,Malignant neoplasm of sigmoid colon,HEDIS-2026
+Colorectal Cancer,C18.9,ICD10,"Malignant neoplasm of colon, unspecified",HEDIS-2026
+Colorectal Cancer,C19,ICD10,Malignant neoplasm of rectosigmoid junction,HEDIS-2026
+Colorectal Cancer,C20,ICD10,Malignant neoplasm of rectum,HEDIS-2026
+Total Colectomy,44150,CPT,"Colectomy, total, abdominal",HEDIS-2026
+Total Colectomy,44151,CPT,"Colectomy, total, abdominal with proctectomy",HEDIS-2026
+Total Colectomy,44155,CPT,"Colectomy, total, abdominal with continent ileostomy",HEDIS-2026
+Total Colectomy,44156,CPT,"Colectomy, total, abdominal with ileostomy",HEDIS-2026
+Total Colectomy,44157,CPT,"Colectomy, total, abdominal with ileoanal anastomosis",HEDIS-2026
+Total Colectomy,44158,CPT,"Colectomy, total, abdominal with ileoanal anastomosis with reservoir",HEDIS-2026
+Bilateral Mastectomy,19303,CPT,"Mastectomy, simple, complete, bilateral",HEDIS-2026
+Unilateral Mastectomy Left,19301,CPT,"Mastectomy, partial, left",HEDIS-2026
+Unilateral Mastectomy Left,19302,CPT,"Mastectomy, subcutaneous, left",HEDIS-2026
+Unilateral Mastectomy Right,19301-RT,CPT,"Mastectomy, partial, right",HEDIS-2026
+Unilateral Mastectomy Right,19302-RT,CPT,"Mastectomy, subcutaneous, right",HEDIS-2026
+History of Bilateral Mastectomy,Z90.13,ICD10,Acquired absence of bilateral breasts and nipples,HEDIS-2026
+Flexible Sigmoidoscopy,45330,CPT,"Sigmoidoscopy, flexible, diagnostic",HEDIS-2026
+Flexible Sigmoidoscopy,45331,CPT,"Sigmoidoscopy, flexible, with biopsy",HEDIS-2026
+Flexible Sigmoidoscopy,45332,CPT,"Sigmoidoscopy, flexible, with foreign body removal",HEDIS-2026
+Flexible Sigmoidoscopy,45333,CPT,"Sigmoidoscopy, flexible, with polypectomy by hot biopsy",HEDIS-2026
+Flexible Sigmoidoscopy,45334,CPT,"Sigmoidoscopy, flexible, with control of bleeding",HEDIS-2026
+Flexible Sigmoidoscopy,45335,CPT,"Sigmoidoscopy, flexible, with directed submucosal injection",HEDIS-2026
+FIT-DNA,81528,CPT,"Oncology, colorectal screening, multi-target stool DNA",HEDIS-2026
+FIT-DNA,G0464,HCPCS,"Colorectal cancer screening, stool-based DNA and FIT",HEDIS-2026
+CT Colonography,74261,CPT,"CT colonography, diagnostic",HEDIS-2026
+CT Colonography,74262,CPT,"CT colonography, screening",HEDIS-2026
+CT Colonography,74263,CPT,"CT colonography, screening, with contrast",HEDIS-2026
+ESRD,N18.6,ICD10,End stage renal disease,HEDIS-2026
+ESRD,Z99.2,ICD10,Dependence on renal dialysis,HEDIS-2026
+Kidney Transplant,Z94.0,ICD10,Kidney transplant status,HEDIS-2026
+Kidney Transplant,T86.10,ICD10,Unspecified complication of kidney transplant,HEDIS-2026
+Pregnancy,O09.90,ICD10,"Supervision of high risk pregnancy, unspecified",HEDIS-2026
+Pregnancy,Z33.1,ICD10,"Pregnant state, incidental",HEDIS-2026
+Pregnancy,Z34.00,ICD10,Encounter for supervision of normal first pregnancy,HEDIS-2026
+Nonacute Inpatient,99304,CPT,"Initial nursing facility care, low complexity",HEDIS-2026
+Nonacute Inpatient,99305,CPT,"Initial nursing facility care, moderate complexity",HEDIS-2026
+Nonacute Inpatient,99306,CPT,"Initial nursing facility care, high complexity",HEDIS-2026
+Eye Exam,92002,CPT,"Ophthalmologic exam, new patient, intermediate",HEDIS-2026
+Eye Exam,92004,CPT,"Ophthalmologic exam, new patient, comprehensive",HEDIS-2026
+Eye Exam,92012,CPT,"Ophthalmologic exam, established patient, intermediate",HEDIS-2026
+Eye Exam,92014,CPT,"Ophthalmologic exam, established patient, comprehensive",HEDIS-2026
+Diabetic Retinal Screening,92227,CPT,Remote imaging for retinal disease screening,HEDIS-2026
+Diabetic Retinal Screening,92228,CPT,Remote imaging for retinal disease monitoring,HEDIS-2026
+Urine Protein Tests,81001,CPT,"Urinalysis, automated, with microscopy",HEDIS-2026
+Urine Protein Tests,81003,CPT,"Urinalysis, automated, without microscopy",HEDIS-2026
+Urine Protein Tests,2888-6,LOINC,Protein [Mass/volume] in Urine,HEDIS-2026
+Urine Protein Tests,5804-0,LOINC,Protein [Mass/volume] in Urine by Test strip,HEDIS-2026
+ACE Inhibitors,36200110,GPI,Lisinopril,HEDIS-2026
+ACE Inhibitors,36200020,GPI,Enalapril,HEDIS-2026
+ACE Inhibitors,36200050,GPI,Ramipril,HEDIS-2026
+ACE Inhibitors,36200030,GPI,Benazepril,HEDIS-2026
+ARB Medications,36400010,GPI,Losartan,HEDIS-2026
+ARB Medications,36400020,GPI,Valsartan,HEDIS-2026
+ARB Medications,36400030,GPI,Irbesartan,HEDIS-2026
+ARB Medications,36400040,GPI,Olmesartan,HEDIS-2026

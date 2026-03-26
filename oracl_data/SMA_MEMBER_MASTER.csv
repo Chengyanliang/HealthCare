@@ -1,0 +1,12 @@
+MEMBER_ID,ROWNUM_ID,GENDER,BIRTH_DATE,RACE,ETHNICITY
+P011,11,female,1985-06-20 00:00:00,White,Not Hispanic
+P001,1,female,1986-03-15 00:00:00,White,Not Hispanic
+P002,2,female,1971-07-22 00:00:00,Black,Not Hispanic
+P003,3,male,1976-01-10 00:00:00,White,Hispanic
+P004,4,female,1966-11-05 00:00:00,Asian,Not Hispanic
+P005,5,male,1956-04-20 00:00:00,White,Not Hispanic
+P006,6,female,1996-08-01 00:00:00,Black,Not Hispanic
+P007,7,male,1974-05-18 00:00:00,White,Hispanic
+P008,8,male,1981-12-03 00:00:00,White,Not Hispanic
+P009,9,female,2004-06-25 00:00:00,Asian,Not Hispanic
+P010,10,male,1946-02-14 00:00:00,White,Not Hispanic
